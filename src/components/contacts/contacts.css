@@ -1,0 +1,26 @@
+.contact{
+    display: flex;
+}
+
+.contact__text{
+    color: #fff;
+    margin-right: 4px;
+    font-weight: 500;
+}
+
+.contact__phone{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.contact__link{
+    color: #fff;
+    font-weight: 500;
+    line-height: 14px;
+    transition: color .5s;
+}
+
+.contact__link:hover{
+    color: #000;
+}

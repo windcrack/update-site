@@ -1,0 +1,76 @@
+.book-card{
+    position: relative;
+    max-width: 254px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 24px;
+}
+
+.book-card:nth-child(5n){
+    margin-right: 0px;
+}
+
+.book-card:hover .book-descr{
+    transform: translateY(0px);
+}
+
+.book-descr{
+    position: absolute;
+    max-width: 254px;
+    inset: auto 0 0 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 6px 8px;
+    transform: translateY(400px);
+    transition: all .6s;
+}
+
+.book-info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 19px;
+    
+}
+
+.book-title{
+    flex-basis: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.book-sale,
+.book-avail,
+.book-pages{
+    margin-bottom: 4px;
+}
+
+.book-avail, .book-sale{
+    flex-basis: 50%;
+}
+
+.book-sale > .book-white{
+    font-weight: 700;
+}
+
+.book-avail{
+    text-align: end;
+}
+
+.book-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    max-height: 130px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 242px;
+}

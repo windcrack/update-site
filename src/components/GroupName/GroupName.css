@@ -1,0 +1,28 @@
+.group-body{
+    margin-top: 48px;
+    text-align: left;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.group-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 31px;
+    flex-basis: 100%;
+}
+
+.group-addres{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    flex-basis: 100%;
+
+}
+
+.group__time-line{
+    flex-basis: 50%;
+}

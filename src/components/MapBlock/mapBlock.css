@@ -1,0 +1,13 @@
+.map-frame{
+    /* flex-basis: 50%; */
+    /* margin-left: 30px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.map-frame iframe{
+    width: 541px;
+    height: 332px;
+    border: none;
+    margin-bottom: 24px;
+}

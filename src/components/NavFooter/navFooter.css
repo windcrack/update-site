@@ -1,0 +1,22 @@
+.footer__nav{
+    display: flex;
+    /* max-width: 362px; */
+}
+
+.footer__items{
+    list-style: none;
+    margin-right: 27px;
+}
+
+.footer__item{
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.footer__item:last-child{
+    margin-bottom: 0px;
+}
+
+.footer__link{
+    color: #fff;
+}

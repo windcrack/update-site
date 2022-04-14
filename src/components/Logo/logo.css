@@ -1,0 +1,21 @@
+.logo{
+    display: flex;
+    transition: color .5s;
+}
+
+.logo__img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.logo__text{
+    max-width: 200px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.logo:hover{
+    color: #fff;
+}

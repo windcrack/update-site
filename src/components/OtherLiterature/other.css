@@ -1,0 +1,46 @@
+.other-card{
+    max-width: 255px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 24px;
+}
+
+.other-card:nth-child(5n){
+    margin-right: 0px;
+}
+
+.other-card:hover .other-descr{
+    transform: translateY(0);
+}
+
+.other-descr{
+    position: absolute;
+    inset: auto 0 0 0;
+    max-width: 255px;
+    background: rgba(28, 127, 226, 0.5);
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 14px 9px;
+    transform: translateY(4.2rem);
+    transition: all .5s;
+}
+
+.other-descr__title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 4px;
+}
+.other-avail,
+.other-sale{
+    flex-basis: 50%;
+}
+
+.other-avail{
+    text-align: end;
+}
+

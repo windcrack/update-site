@@ -1,0 +1,23 @@
+.navigation{
+    display: flex;
+    list-style: none;
+}
+
+.navigation__item{
+    margin-right: 12px;
+}
+
+.navigation__item:last-child{
+    margin-right: 0;
+}
+
+.navigation__link{
+    color: #fff;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.active{
+    color: #000;
+    font-weight: 700;
+}

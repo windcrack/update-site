@@ -1,0 +1,26 @@
+.footer__contact{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.footer__phone{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.footer__phone:last-child{
+    margin-bottom: 0;
+}

@@ -1,0 +1,7 @@
+aside{
+    position: fixed;
+    inset: 22rem auto auto 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
