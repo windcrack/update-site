@@ -21,8 +21,8 @@ const groupData = [
             {weekDay: 'Понедельник', timeLong: '1 час 30 минут', timeStart: '19:00', timeEnd: '20:25', subInfo: false},
             {weekDay: 'Среда', timeLong: '1 час 30 минут', timeStart: '19:00', timeEnd: '20:25', subInfo: false},
             {weekDay: 'Пятница', timeLong: '1 час 30 минут', timeStart: '19:00', timeEnd: '20:25', subInfo: false},
-            {weekDay: 'Понедельник', timeLong: '1 час 30 минут', timeStart: '18:00', timeEnd: '19:30', subInfo: false},
-            {weekDay: 'Понедельник', timeLong: '1 час 30 минут', timeStart: '18:00', timeEnd: '19:30', subInfo: false},
+            {weekDay: 'Суббота', timeLong: '1 час 30 минут', timeStart: '18:00', timeEnd: '19:30', subInfo: false},
+            {weekDay: 'Воскресенье', timeLong: '1 час 30 минут', timeStart: '18:00', timeEnd: '19:30', subInfo: false},
         ],
     },
     {
