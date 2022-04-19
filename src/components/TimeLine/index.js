@@ -4,6 +4,7 @@ import block from '../../assets/img/block.png';
 import './timeLine.css';
 
 export default function TimeLine(props){
+    
     let timeHour = new Date().toLocaleTimeString().slice(0,-3);
     let weekHow = new Date().getDay();
     const daysWeek = ['Воскресенье', "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
@@ -26,6 +27,7 @@ export default function TimeLine(props){
                 <span className="time-line__info">до {props.end}</span>
             </div>
             {props.subInfo ? <img src={subInfo} className="time-line__subInfo" /> : ''}
+            
         </div>
     )
 }
