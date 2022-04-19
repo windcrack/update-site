@@ -4,16 +4,22 @@ import block from '../../assets/img/block.png';
 import './timeLine.css';
 
 export default function TimeLine(props){
-    let data = new Date().toLocaleTimeString().slice(0,-3);
-    // let hour = data.getHours();
+    let timeHour = new Date().toLocaleTimeString().slice(0,-3);
+    let weekHow = new Date().getDay();
+    const daysWeek = ['Воскресенье', "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
     // let min = data.getMinutes();
-    console.log(data);
+    // daysWeek[weekHow];
     return(
         <div className="time-line__row">
             <div className="time-line__week">{props.week}</div>
             <div className="time-line__status">
-                <img src={data >= props.start && data <= props.end ? time : block } className="time-line__img" alt="time"/>
-                {data >= props.start && data <= props.end ? 'Идет группа' : 'Не идет группа'}
+                <img src={
+                    timeHour >= props.start && timeHour <= props.end && daysWeek[weekHow] === props.week ? time : block 
+                } 
+                className="time-line__img" 
+                alt="time"
+                />
+                {timeHour >= props.start && timeHour <= props.end && daysWeek[weekHow] === props.week ? 'Идет группа' : 'Не идет группа'}
             </div>
             <div className="time-line__long">Длительность: {props.long}</div>
             <div className="time-line__time">
