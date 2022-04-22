@@ -26,8 +26,7 @@ export default function TimeLine(props){
                 <span className="time-line__info">с {props.start}</span>
                 <span className="time-line__info">до {props.end}</span>
             </div>
-            {props.subInfo ? <img src={subInfo} className="time-line__subInfo" /> : ''}
-            
+            {props.subInfo ? <img src={subInfo} onClick={() => props.active(true)} className="time-line__subInfo" /> : ''}
         </div>
     )
 }

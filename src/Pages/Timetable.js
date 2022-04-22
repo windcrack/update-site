@@ -1,5 +1,6 @@
 import GroupName from "../components/GroupName";
-
+import Modal from '../components/Modal';
+import React, { useState } from 'react';
 const groupData = [
     {
         name: "Феникс",
@@ -9,7 +10,7 @@ const groupData = [
             {weekDay: 'Вторник', timeLong: '1 час 30 минут', timeStart: '19:00', timeEnd: '20:30', subInfo: false},
             {weekDay: 'Среда', timeLong: '1 час 30 минут', timeStart: '18:00', timeEnd: '19:30', subInfo: false},
             {weekDay: 'Чертверг', timeLong: '1 час 30 минут', timeStart: '19:00', timeEnd: '20:30', subInfo: false},
-            {weekDay: 'Суббота', timeLong: '1 час 30 минут', timeStart: '15:00', timeEnd: '16:30', subInfo: true},
+            {weekDay: 'Суббота', timeLong: '1 час 30 минут', timeStart: '15:00', timeEnd: '16:30', subInfo: "Рабочее собрание: проходит в это день недели в начале месяца"},
             {weekDay: 'Воскресенье', timeLong: '1 час 30 минут', timeStart: '15:00', timeEnd: '16:30', subInfo: false},
         ],
     },
@@ -30,7 +31,7 @@ const groupData = [
         addressGroup: "",
         infoMap: "",
         info:[
-            {weekDay: 'Каждый день', timeLong: '1 час 30 минут', timeStart: '21:00', timeEnd: '22:15', subInfo: true},
+            {weekDay: 'Каждый день', timeLong: '1 час 30 минут', timeStart: '21:00', timeEnd: '22:15', subInfo: "Рабочее собрание: каждую субботу в начале месяца после группы"},
         ]
     }
 ]
@@ -38,6 +39,7 @@ const groupData = [
 
 
 export default function Timetable(){
+    const [modalActive, setModalActive] = useState(false);
     return(
         <section className="container">
             <h1 className="title title__main">Расписание групп смоленского сообщества</h1>
@@ -47,7 +49,13 @@ export default function Timetable(){
                 address={item.addressGroup}  
                 infoGroup={item.info}
                 mapGroup={item.infoMap}
+                changeActive={setModalActive}
             />)}
+            <Modal active={modalActive} setActive={setModalActive}>
+                {groupData.map((item, i) => {
+                    <p>{item.info.subInfo}</p>
+                })}
+            </Modal>
         </section>
     )
 }

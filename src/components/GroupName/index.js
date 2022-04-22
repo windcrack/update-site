@@ -1,11 +1,8 @@
 import MapBlock from "../MapBlock";
 import TimeLine from "../TimeLine";
-import Modal from '../Modal';
-import React, { useState } from 'react';
 import './GroupName.css';
 
 export default function GroupName(props){
-    const [modalActive, setModalActive] = useState(true);
     return(
         <section className="group-body">
             <h2 className="group-title">Собрания группы "{props.groupName}"</h2>
@@ -19,10 +16,11 @@ export default function GroupName(props){
                     start={item.timeStart}
                     end={item.timeEnd}
                     subInfo={item.subInfo}
+                    active={props.changeActive}
                 />)}
             </div>
             {props.mapGroup !== '' ? <MapBlock mapSrc={props.mapGroup} /> : ''}
-            <Modal active={modalActive} setActive={setModalActive} />
+            
         </section>
     )
 }
