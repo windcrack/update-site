@@ -52,9 +52,9 @@ export default function Timetable(){
                 changeActive={setModalActive}
             />)}
             <Modal active={modalActive} setActive={setModalActive}>
-                {groupData.map((item, i) => {
-                    <p>{item.info.subInfo}</p>
-                })}
+                {groupData.map((item, i) => 
+                    <p>{item.info.subInfo !== '' ? item.info.subInfo : null }</p>
+                )}
             </Modal>
         </section>
     )
