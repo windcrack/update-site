@@ -19,9 +19,11 @@ export default function GroupName(props){
                     endHour={item.timeEndHour}
                     endMin={item.timeEndMin}
                     subInfo={item.subInfo}
+                    active={props.changeActive}
                 />)}
             </div>
             {props.mapGroup !== '' ? <MapBlock mapSrc={props.mapGroup} /> : ''}
+            
         </section>
     )
 }

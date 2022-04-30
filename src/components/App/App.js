@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from '../Footer';
 import Timetable from '../../Pages/Timetable';
 import Literature from '../../Pages/Literature';
+import Members from '../../Pages/Members';
 import Newmember from '../../Pages/Newmember';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/timetable" element={<Timetable />} />
           <Route path="/literature" element={<Literature />} />
           <Route path="/newmember" element={<Newmember />} />
+          <Route path='/members' element={<Members />} />
         </Routes>
         <Footer />
       </Router>
