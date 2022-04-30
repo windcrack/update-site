@@ -11,10 +11,13 @@ export default function GroupName(props){
                 {props.address !== '' ? <h3 className="group-addres">Cобрание проходит по адерсу: {props.address}</h3> : ''}
                 {props.infoGroup.map((item, idx) => <TimeLine 
                     key={idx}
+                    weekHow={item.weekNumb}
                     week={item.weekDay}
                     long={item.timeLong}
-                    start={item.timeStart}
-                    end={item.timeEnd}
+                    startHour={item.timeStartHour}
+                    startMin={item.timeStartMin}
+                    endHour={item.timeEndHour}
+                    endMin={item.timeEndMin}
                     subInfo={item.subInfo}
                 />)}
             </div>

@@ -1,0 +1,30 @@
+.newMemberNav-body{
+    max-width: 920px;
+    margin: 24px auto 59px;
+}
+
+.newMemberNav-items{
+    list-style: none;
+}
+
+.newMemberNav-item{
+    background: #1C7FE2;
+    border-radius: 5px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 26px;
+    margin-bottom: 29px;
+}
+
+.newMemberNav-item:last-child{
+    margin-bottom: 0;
+}
+
+.newMemberNav-link{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: justify;
+}

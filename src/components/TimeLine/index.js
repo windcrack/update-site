@@ -7,18 +7,21 @@ export default function TimeLine(props){
     let data = new Date();
     let hour = data.getHours();
     let min = data.getMinutes();
-    // console.log([hour, min]);
+    let week = data.getDay();
     return(
         <div className="time-line__row">
             <div className="time-line__week">{props.week}</div>
             <div className="time-line__status">
-                <img src={hour === 19 && min === 30 ? time : block } className="time-line__img" alt="time"/>
-                {hour === 19 && min === 30 ? 'Идет группа' : 'Не идет группа'}
+                <img 
+                    src={((hour === props.startHour && min === props.startMin) || (hour < props.endHour || min < props.endMin)) && week === props.weekHow ? time : block } 
+                    className="time-line__img" alt="time"
+                />
+                {((hour === props.startHour && min === props.startMin) || (hour < props.endHour || min < props.endMin)) && week === props.weekHow ? 'Идет группа' : 'Не идет группа'}
             </div>
             <div className="time-line__long">Длительность: {props.long}</div>
             <div className="time-line__time">
-                <span className="time-line__info">с {props.start}</span>
-                <span className="time-line__info">до {props.end}</span>
+                <span className="time-line__info">с {props.startHour}:{props.startMin < 10 ? `0${props.startMin}` : props.startMin}</span>
+                <span className="time-line__info">до {props.endHour}:{props.endMin < 10 ? `0${props.endMin}` : props.endMin}</span>
             </div>
             {props.subInfo ? <img src={subInfo} className="time-line__subInfo" /> : ''}
         </div>
