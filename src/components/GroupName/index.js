@@ -14,10 +14,8 @@ export default function GroupName(props){
                     weekHow={item.weekNumb}
                     week={item.weekDay}
                     long={item.timeLong}
-                    startHour={item.timeStartHour}
-                    startMin={item.timeStartMin}
-                    endHour={item.timeEndHour}
-                    endMin={item.timeEndMin}
+                    start={item.timeStart}
+                    end={item.timeEnd}
                     subInfo={item.subInfo}
                     active={props.changeActive}
                 />)}

@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import DropDown from '../DropDown'
 import './navItem.css'
 
 const data = [
@@ -18,9 +20,21 @@ export default function NavItems(){
 }
 
 function List(){
+    const [dropDown, setDropDown] = useState(false);
+
+    function openMenu(){
+        if(dropDown === false){
+            setDropDown(true)
+        }else{
+            setDropDown(false)
+        }
+        
+    }
     return(
         <>
             {data.map(elem => <li className='navigation__item' key={elem.id}><NavLink className="navigation__link" activeclassname="active" to={elem.link}>{elem.title}</NavLink></li>)}
+            <li className='navigation__link drop-item' onClick={openMenu}>О сообщистве </li>
+            {dropDown ? <DropDown changer={openMenu} /> : null}
         </>
     )
 }

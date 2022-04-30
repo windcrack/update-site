@@ -1,0 +1,33 @@
+.tabs-lists{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tabs-nav{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+.tabs-item{
+    width: 350px;
+    height: 51px;
+    border: 2px solid #1C7FE2;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-active{
+    background: #1C7FE2;
+    color: #fff;
+    font-weight: 700;
+}

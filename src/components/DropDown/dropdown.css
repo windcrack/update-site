@@ -1,0 +1,31 @@
+.dropDown-items{
+    position: absolute;
+    list-style: none;
+    background: #1C7FE2;
+    left: 58%;
+    top: 3rem;
+    width: 299px;
+    z-index: 10;
+}
+
+.dropDown-item{
+    text-align: center;
+    padding: 6px 0 9px;
+    border-bottom: 1px solid #fff;
+}
+
+.dropDown-item:last-child{
+    border: none;
+}
+
+.dropDown-link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.active{
+  color: #000;
+  font-weight: 700;
+}

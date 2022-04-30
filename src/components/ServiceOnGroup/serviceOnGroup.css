@@ -1,0 +1,8 @@
+.service-row{
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #1C7FE2;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
