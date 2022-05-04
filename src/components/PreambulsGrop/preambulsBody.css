@@ -1,0 +1,12 @@
+.preambuls-body{
+    height: auto;
+}
+
+.swiper-slide{
+    width: 50% !important;
+}
+
+.preambuls-body img{
+    width: 540px;
+    height: 722px;
+}

@@ -7,7 +7,7 @@ export default function TimeLine(props){
     
     let timeHour = new Date().toLocaleTimeString().slice(0,-3);
     let weekHow = new Date().getDay();
-    const daysWeek = ['Воскресенье', "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+    const daysWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 
     return(
         <div className="time-line__row">

@@ -19,6 +19,10 @@ code {
     monospace;
 }
 
+img{
+  max-width: 100%;
+}
+
 .container, .container__header{
   max-width: 1110px;
   display: flex;
