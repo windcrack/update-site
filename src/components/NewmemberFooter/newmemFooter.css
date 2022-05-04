@@ -1,0 +1,33 @@
+.newmember-footer__lists{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.newmember-footer__list{
+    margin-right: 55px;
+}
+
+.newmember-footer__link{
+    text-decoration: underline;
+}
+
+.newmember-footer__button{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 16px 121px;
+    cursor: pointer;
+    background: rgba(28, 127, 226, 0.5);
+    border-radius: 5px;
+    border: none;
+    transition: all .5s;
+}
+
+.newmember-footer__button:hover{
+    background: #1C7FE2;
+    color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

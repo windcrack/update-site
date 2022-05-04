@@ -2,11 +2,18 @@
     height: auto;
 }
 
-.swiper-slide{
+.preambuls-body > .swiper-slide{
     width: 50% !important;
 }
 
 .preambuls-body img{
     width: 540px;
     height: 722px;
+}
+
+.preambuls-body > .swiper-button-prev,
+.preambuls-body > .swiper-button-next,
+.preambuls-body > .swiper-pagination .swiper-pagination-bullet-active{
+    color: #000 !important;
+    background: #000 !important;
 }

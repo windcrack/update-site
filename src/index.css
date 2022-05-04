@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+html, body{
+  height: 100%;
+}
+
 body {
   margin: 0;
+  
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,7 +31,7 @@ img{
 .container, .container__header{
   max-width: 1110px;
   display: flex;
-  margin: auto;
+  margin: 0 auto auto;
   
 }
 .container{
