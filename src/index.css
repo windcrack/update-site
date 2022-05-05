@@ -53,7 +53,7 @@ img{
 
 .title__main{
   font-size: 36px;
-  max-width: 726px;
+  min-width: 726px;
   margin-top: 21px;
 }
 

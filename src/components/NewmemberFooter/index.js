@@ -16,7 +16,7 @@ export default function NewmemberFooter(){
                 </li>
             </ul>
             <Link to="/timetable">
-                <button className="newmember-footer__button">Рассписание групп</button>
+                <button className="newmember-footer__button">Расписание групп</button>
             </Link>
         </>
     )

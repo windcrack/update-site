@@ -9,6 +9,9 @@ import Timetable from '../../Pages/Timetable';
 import Literature from '../../Pages/Literature';
 import Members from '../../Pages/Members';
 import Newmember from '../../Pages/Newmember';
+import Twelvestep from '../../Pages/Twelvestep';
+import Howcan from '../../Pages/Howcan';
+import AnMeeting from '../../Pages/AnMeeting';
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
           <Route path="/timetable" element={<Timetable />} />
           <Route path="/literature" element={<Literature />} />
           <Route path="/newmember" element={<Newmember />} />
-          <Route path='/members' element={<Members />} />
+          <Route path="/members" element={<Members />} />
+          <Route path="/twelvestep" element={<Twelvestep />} />
+          <Route path="/howcan" element={<Howcan />} />
+          <Route path="/an-meeting" element={<AnMeeting />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,0 +1,19 @@
+.twelvesteSub-descr,
+.twelvesteSub-lists{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 21px 0;
+}
+
+.twelvesteSub-lists{
+    padding-left: 24px;
+}
+
+.twelvesteSub-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
