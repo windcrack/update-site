@@ -1,5 +1,4 @@
 import GroupName from "../components/GroupName";
-import Modal from '../components/Modal';
 import React, { useState } from 'react';
 const groupData = [
     {
@@ -39,23 +38,22 @@ const groupData = [
 
 
 export default function Timetable(){
-    const [modalActive, setModalActive] = useState(false);
+
     return(
         <section className="container">
             <h1 className="title title__main">Расписание групп смоленского сообщества</h1>
-            {groupData.map((item, idx) => <GroupName 
+            {groupData.map((item, idx) => <GroupName
                 key={idx}
-                groupName={item.name} 
-                address={item.addressGroup}  
+                groupName={item.name}
+                address={item.addressGroup}
                 infoGroup={item.info}
                 mapGroup={item.infoMap}
-                changeActive={setModalActive}
             />)}
-            <Modal active={modalActive} setActive={setModalActive}>
-                {groupData.map((item, i) => 
+            {/* <Modal active={modalActive} setActive={setModalActive}>
+                {groupData.map((item, i) =>
                     <p key={i}>{item.info.subInfo !== '' ? item.info.subInfo : null }</p>
                 )}
-            </Modal>
+            </Modal> */}
         </section>
     )
 }

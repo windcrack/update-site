@@ -1,0 +1,20 @@
+.an-meetingText{
+    margin: 19px 0 16px;
+    text-align: justify;
+}
+
+.an-meetingText__header{
+    margin-top: 30px;
+}
+
+.an-meetingText__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.an-meetingText__link{
+    text-decoration: underline;
+}

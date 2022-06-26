@@ -29,3 +29,8 @@
   color: #000;
   font-weight: 700;
 }
+
+.click-outside{
+	position: fixed;
+  	inset: 0;
+}

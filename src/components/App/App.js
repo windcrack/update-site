@@ -12,6 +12,7 @@ import Newmember from '../../Pages/Newmember';
 import Twelvestep from '../../Pages/Twelvestep';
 import Howcan from '../../Pages/Howcan';
 import AnMeeting from '../../Pages/AnMeeting';
+import OpenMeeting from '../../Pages/OpenMeeting';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/twelvestep" element={<Twelvestep />} />
           <Route path="/howcan" element={<Howcan />} />
           <Route path="/an-meeting" element={<AnMeeting />} />
+          <Route path="/open-meeting" element={<OpenMeeting />} />
         </Routes>
         <Footer />
       </Router>
