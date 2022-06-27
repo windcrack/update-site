@@ -11,3 +11,8 @@
     border: none;
     margin-bottom: 24px;
 }
+
+.map-frame__img{
+	height: 100%;
+	width: 100%;
+}

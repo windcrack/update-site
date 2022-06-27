@@ -12,7 +12,7 @@ html, body{
 
 body {
   margin: 0;
-  
+
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,7 +32,7 @@ img{
   max-width: 1110px;
   display: flex;
   margin: 0 auto auto;
-  
+
 }
 .container{
   flex-direction: column;

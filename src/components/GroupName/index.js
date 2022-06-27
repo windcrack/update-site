@@ -1,6 +1,13 @@
 import MapBlock from "../MapBlock";
+
 import TimeLine from "../TimeLine";
+
 import './GroupName.css';
+
+import 'swiper/css';
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+
 
 export default function GroupName(props){
     return(
@@ -21,8 +28,7 @@ export default function GroupName(props){
                 />)}
 
             </div>
-            {props.mapGroup !== '' ? <MapBlock mapSrc={props.mapGroup} /> : ''}
-
+            {props.mapGroup !== '' ? <MapBlock photo={props.photo} mapSrc={props.mapGroup} /> : ''}
         </section>
     )
 }
