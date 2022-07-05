@@ -28,8 +28,13 @@
     max-width: 50vw;
 	/* max-height: 90%; */
 	z-index: 100;
+	height: 90vh;
 }
 
-.swiper-wrapper{
+.modal__body > img{
+	max-height: 100%;
+}
+
+.swiper-wrapper__height{
 	height: 90vh !important;
 }
