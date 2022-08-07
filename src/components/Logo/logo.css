@@ -1,6 +1,7 @@
 .logo{
     display: flex;
     transition: color .5s;
+	align-items: center;
 }
 
 .logo__img{
@@ -9,11 +10,12 @@
 }
 
 .logo__text{
+	font-family: 'DM Sans', sans-serif;
     max-width: 200px;
-    font-weight: 500;
-    line-height: 14px;
-    text-align: left;
-    margin-left: 10px;
+    font-weight: 700;
+	font-size: 28.1517px;
+	line-height: 30px;
+	color: #170F49;
 }
 
 .logo:hover{

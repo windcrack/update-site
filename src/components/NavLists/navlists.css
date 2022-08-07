@@ -1,0 +1,39 @@
+.nav__items{
+	display: flex;
+	list-style: none;
+}
+
+.nav__items:last-child .nav__item:last-child .nav__img{
+	width: 840px;
+	height: 300px;
+	object-fit: none;
+}
+
+.nav__item{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
+
+.nav__item:first-child{
+	width: 840px;
+}
+
+.nav__item:first-child .nav__img{
+	width: 840px;
+	height: 300px;
+	object-fit: none;
+}
+
+.nav__shadow{
+	position: absolute;
+	inset: 0;
+	background: var(--shadow);
+}
+
+.nav__title{
+	position: absolute;
+	color: #fff;
+}

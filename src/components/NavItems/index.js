@@ -4,11 +4,10 @@ import DropDown from '../DropDown'
 import './navItem.css'
 
 const data = [
-    {id: 1, title: 'Главная', link: '/'},
-    {id: 2, title: 'Расписание', link: '/timetable'},
+    {id: 1, title: 'Расписание', link: '/timetable'},
+    {id: 2, title: 'Ежедневник', link: '/members'},
     {id: 3, title: 'Литература', link: '/literature'},
-    {id: 4, title: 'Новичку', link: '/newmember'},
-    {id: 5, title: 'Участнику', link: '/members'},
+    {id: 4, title: 'Связаться с нами', link: '/members'},
 ]
 
 export default function NavItems(){
@@ -34,7 +33,7 @@ function List(){
         <>
 
             {data.map(elem => <li className='navigation__item' key={elem.id}><NavLink className="navigation__link" activeclassname="active" to={elem.link}>{elem.title}</NavLink></li>)}
-            <li className='navigation__link drop-item' onClick={openMenu}>О сообщистве </li>
+            <li className='navigation__link drop-item' onClick={openMenu}>О нас</li>
             {dropDown ? <DropDown changer={openMenu} /> : null}
         </>
     )

@@ -5,7 +5,7 @@
 }
 
 .navigation__item{
-    margin-right: 12px;
+    margin-right: 32px;
 }
 
 .navigation__item:last-child{
@@ -13,7 +13,7 @@
 }
 
 .navigation__link{
-    color: #fff;
+    color: var(--colorText);
     font-weight: 500;
     line-height: 14px;
 }

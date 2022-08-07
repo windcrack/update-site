@@ -1,5 +1,8 @@
 header{
-    background: #1C7FE2;
-    padding: 5px;
+    background: #fff;
+    padding: 21px 0;
     border-radius: 5px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 }
