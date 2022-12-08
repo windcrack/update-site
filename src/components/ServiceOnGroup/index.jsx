@@ -1,3 +1,4 @@
+import React from 'react';
 import './serviceOnGroup.css';
 
 export default function ServiceOnGroup(props){

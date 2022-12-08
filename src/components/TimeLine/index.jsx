@@ -1,9 +1,9 @@
 import subInfo from '../../assets/img/sub-info.png';
 import time from '../../assets/img/timeGreen.png';
 import block from '../../assets/img/block.png';
-import Modal from "../Modal";
+import Modal from '../Modal';
 import './timeLine.css';
-import { useState } from 'react';
+import React, {useState} from 'react';
 
 export default function TimeLine(props){
 
@@ -11,9 +11,6 @@ export default function TimeLine(props){
     let weekHow = new Date().getDay();
     const daysWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 	const [modalActive, setModalActive] = useState(false);
-	function changeActive(){
-		setModalActive(true)
-	}
 
     return(
 		<>
@@ -33,8 +30,7 @@ export default function TimeLine(props){
 					<span className="time-line__info">с {props.start}</span>
 					<span className="time-line__info">до {props.end}</span>
 				</div>
-				{props.subInfo ? <img src={subInfo} alt="Дополнительная информация" onClick={changeActive} className="time-line__subInfo" /> : ''}
-
+				{props.subInfo ? <img src={subInfo} alt="Дополнительная информация" onClick={() => setModalActive(true)} className="time-line__subInfo" /> : ''}
 			</div>
 			<Modal active={modalActive} setActive={setModalActive}>
 				<p>{props.subInfo}</p>

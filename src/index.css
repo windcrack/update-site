@@ -30,7 +30,8 @@ code {
 }
 
 img{
-  max-width: fit-content;
+  /* max-width: fit-content; */
+  max-width: 100%;
 }
 
 .container, .container__header{

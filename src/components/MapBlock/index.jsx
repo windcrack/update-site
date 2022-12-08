@@ -26,6 +26,7 @@ export default function MapBlock(props){
 						hide: true,
 					}}
 					modules={[Navigation, Scrollbar]}
+					className="slider-block"
 				>
 					{props.photo.map((item, idx) =><SwiperSlide key={idx}><img className="map-frame__img" src={item} alt="Картинка" /></SwiperSlide>)}
 				</Swiper>
