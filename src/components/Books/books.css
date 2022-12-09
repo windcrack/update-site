@@ -28,21 +28,20 @@
 }
 
 .book-info{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     text-align: left;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 19px;
-    
+
 }
 
 .book-title{
     flex-basis: 100%;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 1.1;
     margin-bottom: 20px;
 }
 
@@ -60,9 +59,9 @@
     font-weight: 700;
 }
 
-.book-avail{
+/* .book-avail{
     text-align: end;
-}
+} */
 
 .book-text{
     font-weight: 400;
@@ -73,4 +72,31 @@
     overflow-y: auto;
     overflow-x: hidden;
     max-width: 242px;
+}
+
+.block-price{
+	position: absolute;
+	right: 10px;
+	bottom: 1rem;
+	width: 100px;
+	height: 50px;
+	background: var(--whiteRGBA70per);
+	display: grid;
+	place-content: center;
+}
+
+.block-price__info{
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--colorText);
+}
+
+.block-sound{
+	position: absolute;
+	right: 0;
+	top: 0.5rem;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 1rem;
+	border-radius: 15px;
+	border: 2px solid var(--linkColor);
 }

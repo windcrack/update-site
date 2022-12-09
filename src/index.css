@@ -2,6 +2,7 @@
 
 :root{
 	--white: #fff;
+	--whiteRGBA70per: rgba(255, 255, 255, 0.7);
 	--colorText: #170F49;
 	--linkColor: #0000FF;
 	--DMSans: 'DM Sans', sans-serif;

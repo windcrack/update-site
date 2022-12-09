@@ -10,37 +10,43 @@
     margin-right: 0px;
 }
 
-.other-card:hover .other-descr{
+/* .other-card:hover .other-descr{
     transform: translateY(0);
-}
+} */
 
 .other-descr{
     position: absolute;
-    inset: auto 0 0 0;
+    bottom: 0;
+	width: 100%;
     max-width: 255px;
-    background: rgba(28, 127, 226, 0.5);
+    /* background: rgba(28, 127, 226, 0.5); */
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     padding: 14px 9px;
-    transform: translateY(4.2rem);
+    /* transform: translateY(-50%); */
     transition: all .5s;
 }
 
 .other-descr__title{
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 1.1;
     text-align: center;
     flex-basis: 100%;
     margin-bottom: 4px;
 }
 .other-avail,
 .other-sale{
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
 }
 
 .other-avail{
-    text-align: end;
+    text-align: center;
+	margin-right: auto;
+	background: var(--whiteRGBA70per);
+	padding: 1rem;
 }
+
+
 

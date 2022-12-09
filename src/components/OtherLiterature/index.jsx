@@ -5,10 +5,11 @@ export default function OtherLiterature(props){
             <div className="other-card">
                 <img src={props.img} className="other-img" alt={props.title} />
                 <div className="other-descr">
-                    <h3 className="other-descr__title">{props.title}</h3>
-                    <p className="other-sale">Цена: <span className="white">{props.sale}</span> &#8381;</p>
-                    <p className="other-avail">Наличие: <span className="white">{props.avail ? 'Да':'Нет'}</span></p>
+                    <p className="other-avail">Наличие: {props.avail ? 'Да':'Нет'}</p>
                 </div>
+				<div className="block-price">
+					<div className="block-price__info">{props.sale}<b> &#8381;</b></div>
+				</div>
             </div>
         </>
     )
