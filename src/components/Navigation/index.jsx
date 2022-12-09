@@ -9,16 +9,16 @@ import img5 from '../../assets/img/hero/img5.png'
 import img6 from '../../assets/img/hero/img6.png'
 
 const oneRow= [
-	{title: 'РАСПИСАНИЕ СОБРАНИЙ', img: img1},
-	{title: 'КОНТАКТЫ', img: img2},
-	{title: 'О НАС', img: img3},
+	{title: 'РАСПИСАНИЕ СОБРАНИЙ', img: img1, link: '/timetable'},
+	{title: 'КОНТАКТЫ', img: img2, link: '/an-meeting'},
+	{title: 'О НАС', img: img3, link: '/howcan'},
 
 ]
 
 const twoRow = [
-	{title: 'ОНЛАЙН ГРУППА', img: img4},
-	{title: 'НАШИ ИСТОРИИ', img: img5},
-	{title: 'КАК МНЕ ПРЕКРАТИТЬ УПОТРЕБЛЕНИЕ?', img: img6},
+	{title: 'ОНЛАЙН ГРУППА', img: img4, link: '/timetable'},
+	{title: 'НАШИ ИСТОРИИ', img: img5, link: '/open-meeting'},
+	{title: 'КАК МНЕ ПРЕКРАТИТЬ УПОТРЕБЛЕНИЕ?', img: img6, link: '/twelvestep'},
 ]
 
 export default function Navigation(){
