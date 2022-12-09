@@ -10,7 +10,7 @@ export default function Footer(){
             <div className="container__header">
                 <FooterContact />
                 <NavFooter />
-                <Logo />
+                <Logo className="footer__logo" />
             </div>
             <Copyright />
         </footer>

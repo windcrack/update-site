@@ -12,3 +12,7 @@ footer{
     font-size: 12px;
     color: #ccc;
 }
+
+.footer__logo{
+	color: var(--white);
+}
