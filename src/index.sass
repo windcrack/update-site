@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400500700&family=Roboto:wght@300400500700900&display=swap')
+@import vars
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  height: 100%
+
+body
+  margin: 0
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background: url('./assets/pattern.png')
+
+code
+  font-family: 'Roboto', sans-serif
+
+img
+  /* max-width: fit-content */
+  max-width: 100%
+  vertical-align: top
+
+.container, .container__header
+  max-width: 1110px
+  display: flex
+  margin: 0 auto auto
+  width: calc(100% - 40px)
+
+.container
+	flex-direction: column
+
+	&__header
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+
+.title
+	font-style: normal
+	font-weight: 700
+	line-height: 42px
+	text-align: center
+	margin: auto
+
+	&__main
+		font-size: 36px
+		min-width: 726px
+		margin-top: 21px
+
+	&__sub
+		flex-basis: 100%
+		font-weight: 400
+		font-size: 36px
+		line-height: 42px
+		text-align: center
+		margin: 24px 0 6px
+
+a
+  color: #000
+  text-decoration: none
+
+.btn
+	padding: 7px 14px
+	background-color: transparent
+	border-radius: 5px
+	border: 2px solid #000
+	cursor: pointer
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 28px
+	position: relative
+	overflow: hidden
+
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 0%
+		height: 100%
+		background: #1C7FE2
+		transition: all .5s
+		z-index: 1
+
+	&:hover
+		color: #fff
+		border: 2px solid #1C7FE2
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+	&__text
+		position: relative
+		z-index: 2
+
+	&:active
+		filter: none
+
+.btn:hover:before
+  width: 100%
+
+.book-body, .other-body
+  display: flex
+  flex-wrap: wrap
+
+.white
+  color: #fff
